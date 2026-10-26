@@ -22,6 +22,18 @@ python -m deepchat "用一句话解释机会成本"
 
 Python 3.13 / openai / python-dotenv / pytest
 
+## 项目结构
+
+```text
+deepchat/
+├── __main__.py   # CLI 入口（argparse）
+├── config.py     # 环境变量与配置
+├── llm.py        # DeepSeek 客户端封装（流式）
+├── tools.py      # calc 工具定义
+└── agent.py      # 手写 Agent 循环
+tests/            # pytest 测试（全部 mock，不烧 token）
+```
+
 ## 测试
 
 ```bash
